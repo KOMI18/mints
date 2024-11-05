@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Sidebar.css */
+.custom-modal .p-dialog-header {
+  background-color: #fff;
+  color: '#282c34';
+
+  border-bottom: none;
+}
+
+.custom-modal .p-dialog-content {
+  background-color: #ffff;
+}
+
+.custom-modal .p-dialog .p-button {
+  background-color: #ffff;
+  border: none;
+  border-radius: 6px;
+}
+
+.custom-modal .p-dialog-header-icon {
+  color: #fff;
+}
+
+.custom-modal .p-field label {
+  color: #ddd;
+  font-size: 14px;
+}
+input:focus {
+  border-color: #333 !important; /* Remplacez #333 par la couleur que vous voulez */
+  box-shadow: none !important; /* Supprime les ombres bleues */
+}
+.p-inputtext:focus {
+  border-color: #333 !important; /* Par exemple, noir au lieu de bleu */
+  box-shadow: none !important;   /* Supprime l'ombre bleue */
+}
