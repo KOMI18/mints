@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GoogleMap, LoadScript, Polyline , Marker, Polygon } from '@react-google-maps/api';
-import { GOOGLE_KEY } from '../utils/key';
+// import { GOOGLE_KEY } from '../utils/key';
 import axios from 'axios';
 import { app_constante } from '../utils/app_constante';
 import { mapStyles } from '../utils/map_style';
@@ -15,7 +15,7 @@ const center = {
   lng: 12.6761  
 };
 
-
+const GOOGLE_KEY ='AIzaSyBy9Mq91oGtmrw1jKiRrDvKWwGpQgtzt3I'
 function MyComponent() {
   const [bassin, setBassin] = useState([]);
   const [riviers, setRivers] = useState([]);
@@ -80,7 +80,7 @@ function MyComponent() {
       };
       const fetchRiversInBassin = async () => {
         try {
-          const response = await axios.get(app_constante.upstream, {
+          const response = await axios.get(`${app_constante.baseUrl+app_constante.upstream}`, {
             params: {
               lat: selectedPoint.lat,
               lng: selectedPoint.lng,
@@ -105,7 +105,7 @@ function MyComponent() {
 
         const fetchShedew = async () => {
           try {
-            const response = await axios.get(app_constante.downStream, {
+            const response = await axios.get(`${app_constante.baseUrl+app_constante.downStream}`, {
               params: {
                 lat: selectedPoint.lat,
                 lng: selectedPoint.lng,

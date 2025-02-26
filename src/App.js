@@ -18,8 +18,8 @@ function App() {
             <Route path='/' element={<LandingPage />} />
             <Route path='/demo' element={<MapView />} />
             <Route path='*' element={<Page404 />} />
-            </Routes>
-          </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const LandingPage = () => {
         <div className="container">
           <a className="navbar-brand" href="/">
       <img 
-        src="/assets/img/Logo-MINTS.png" 
+        src="/Logo-MINTS.png" 
         alt="MINTS Logo" 
         style={{ height: '50px', width: 'auto', color:'#f39723' }} 
         className="d-inline-block align-top"
@@ -59,7 +59,7 @@ const LandingPage = () => {
       {[1, 2, 3, 4].map((index) => (
         <div className={`carousel-item ${index === 1 ? 'active' : ''}`} key={index}>
           <img 
-            src={`/assets/img/${index}.jpg`} 
+            src={`/${index}.jpg`} 
             className="d-block w-100" 
             alt={`Background ${index}`} 
             style={{ 
@@ -227,11 +227,11 @@ const LandingPage = () => {
           <div className="row" style={{ background: 'url("/assets/img/IMG_1368.webp")', backgroundSize: 'cover', color: 'white', position: 'relative' }}>
             <div className="container" style={{ background: 'rgba(255, 255, 0, 0.3)', padding: '2rem', borderRadius: '8px', width:"90%", display:"flex", flexDirection:"row", flexWrap:"wrap", gap:"2rem", justifyContent:"center"}}>
         {[
-              { name: "Tehem KOM PARFAIT", role: "Dev Full Stack", image: "/assets/img/team2.jpeg" },
-              { name: "IVANA MICHELLE", role: "UX / UI", image: "/assets/img/team3.jpeg" },
-              { name: "Hesed TAYAWALBA", role: "Data Analyst", image: "/assets/img/team1.jpeg" },
-              { name: "Serge NOAH", role: "Data Scientist", image: "/assets/img/team4.jpeg" },
-              { name: "Pacôme KENGALI ", role: "Project Manager", image: "/assets/img/team5.jpeg" },
+              { name: "Tehem KOM PARFAIT", role: "Dev Full Stack", image: "/team2.jpeg" },
+              { name: "IVANA MICHELLE", role: "UX / UI", image: "/team3.jpeg" },
+              { name: "Hesed TAYAWALBA", role: "Data Analyst", image: "/team1.jpeg" },
+              { name: "Serge NOAH", role: "Data Scientist", image: "/team4.jpeg" },
+              { name: "Pacôme KENGALI ", role: "Project Manager", image: "/team5.jpeg" },
             ].map((member, index) => (
               <div className="col-md-4 mb-4" key={index} data-aos="fade-up" data-aos-delay={100 * index}>
                 <div className="card bg-light text-center p-3" style={{ borderRadius: '8px' }}>
@@ -247,12 +247,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
       {/* Contact Section */}
       <section id="contact" className="py-5">
         <div className="container">
